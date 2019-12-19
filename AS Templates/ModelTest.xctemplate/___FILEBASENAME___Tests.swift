@@ -26,45 +26,17 @@ final class ___VARIABLE_sceneName___Tests: XCTestCase {
 
 }
 
-// MARK: - Valid Parsing
+// MARK: - Initializer
 
 extension ___VARIABLE_sceneName___Tests {
 
     func testInitialize___VARIABLE_sceneName___() {
-        let option = ___VARIABLE_sceneName___(id: "5",
+        let model = ___VARIABLE_sceneName___(id: "5",
                                               link: "https://www.apple.com",
                                               strings: ["", "", ""])
-        XCTAssertEqual(option.id, "5")
-        XCTAssertEqual(option.link?.absoluteString, "https://www.apple.com")
-        XCTAssertEqual(option.strings, ["", "", ""])
-    }
-
-    func testDecode___VARIABLE_sceneName____noCondition_withLink() {
-        let option = EventModelPayload<___VARIABLE_sceneName___>.___VARIABLE_sceneName___NoConditionWithLink.object
-        XCTAssertEqual(option.id, "5")
-        XCTAssertEqual(option.link?.absoluteString, "https://www.apple.com")
-        XCTAssertEqual(option.strings.count, 0)
-    }
-
-    func testDecode___VARIABLE_sceneName____withoutLink() {
-        let option = EventModelPayload<___VARIABLE_sceneName___>.___VARIABLE_sceneName___WithoutLink.object
-        XCTAssertEqual(option.id, "5")
-        XCTAssertNil(option.link?.absoluteString)
-        XCTAssertEqual(option.strings.count, 0)
-    }
-
-}
-
-// MARK: - Invalid Parsing
-
-extension ___VARIABLE_sceneName___Tests {
-
-    func testDecode___VARIABLE_sceneName____invalidId() {
-        // swiftlint:disable:next line_length
-        let expectedMessage = "Failed to create ___VARIABLE_sceneName___Model<Character>.Type from model____VARIABLE_sceneName___invalid_id.json"
-        expectFatalError(expectedMessage: expectedMessage) {
-            _ = EventModelPayload<___VARIABLE_sceneName___>.___VARIABLE_sceneName___InvalidId.object
-        }
+        XCTAssertEqual(model.id, "5")
+        XCTAssertEqual(model.link?.absoluteString, "https://www.apple.com")
+        XCTAssertEqual(model.strings, ["", "", ""])
     }
 
 }

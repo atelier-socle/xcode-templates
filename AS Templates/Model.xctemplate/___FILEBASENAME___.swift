@@ -14,10 +14,10 @@ import Foundation
 public typealias ___VARIABLE_sceneName___Equatable = Character
 public typealias ___VARIABLE_sceneName___ = ___VARIABLE_sceneName___Model<___VARIABLE_sceneName___Equatable>
 
-/// a data class to decode json from service benefits payload.
-/// - conforms to `Decodable` protocols
+/// a data class to encode/decode a json:
+/// - conforms to `Codable` protocols
 /// - follow a conditional conformance to equality by `Conformance`
-public struct ___VARIABLE_sceneName___Model<Conformance>: Decodable {
+public struct ___VARIABLE_sceneName___Model<Conformance>: Codable {
 
     // MARK: Properties
 
@@ -25,10 +25,10 @@ public struct ___VARIABLE_sceneName___Model<Conformance>: Decodable {
     public let id: String
     /// the ___VARIABLE_sceneName___'s link
     public let link: URL?
-    /// the strings
+    /// the ___VARIABLE_sceneName___'s strings
     public let strings: [String]
 
-    // MARK: Life Cycle
+    // MARK: Initializers
 
     public init(id: String,
                 link: String,
@@ -38,16 +38,11 @@ public struct ___VARIABLE_sceneName___Model<Conformance>: Decodable {
         self.strings = strings
     }
 
-    /// init from decoder to decode values from a native format into in-memory representations.
-    /// - Parameter decoder: `Decoder`
-    /// - throws: can throw a decoding mapping
     public init(from decoder: Decoder) throws {
-        id           = try decoder.decode(CodingKeys.id)
-        link         = try? decoder.decodeIfPresent(CodingKeys.link)
-
-        let stringsType = [DecodableThrowable<String>].self
-        self.strings = (try? decoder.decodeIfPresent(CodingKeys.strings, as: stringsType)?
-                                    .compactMap { $0.value }) ?? []
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id      = try container.decode(String.self, forKey: .id)
+        link    = try container.decode(URL.self, forKey: .link)
+        strings = try container.decode([String].self, forKey: .strings)
     }
 
 }
