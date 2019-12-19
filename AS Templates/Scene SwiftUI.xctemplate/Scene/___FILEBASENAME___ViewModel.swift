@@ -12,9 +12,6 @@ import Foundation
 
 /// view model
 final class ___VARIABLE_sceneName___ViewModel: ObservableObject {
-    #warning("use L10n instead of hardcoding string")
-    let addName = "Add name"
-    let navigationBarTitle = "L10n.___VARIABLE_sceneName___.NavigationBar.title"
     @Published var names = [String]()
 }
 

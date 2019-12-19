@@ -19,9 +19,9 @@ final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presenter
 
     // MARK: Life Cycle
 
-    init(interactor: SampleInteractorLogic? = nil) {
+    init(interactor: ___VARIABLE_sceneName___InteractorLogic? = nil) {
         viewModel = ___VARIABLE_sceneName___ViewModel()
-        self.interactor = interactor ?? SampleInteractor(presenter: self)
+        self.interactor = interactor ?? ___VARIABLE_sceneName___Interactor(presenter: self)
 
         interactor?.subscribe()
     }
