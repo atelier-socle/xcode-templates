@@ -27,12 +27,12 @@ extension ___VARIABLE_sceneName___View {
             }
         }
         .listStyle(GroupedListStyle())
-        .navigationBarTitle(viewModel.navigationBarTitle)
+        .navigationBarTitle(L10n.___VARIABLE_sceneName___.NavigationBar.title)
     }
 
     private var btnFetchName: some View {
         Button(action: presenter.fetchName) {
-            Text(viewModel.addName)
+            Text(L10n.___VARIABLE_sceneName___.Button.title)
         }
     }
 
@@ -50,12 +50,8 @@ extension ___VARIABLE_sceneName___View {
 struct ___VARIABLE_sceneName___View_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            NavigationView {
-                ___VARIABLE_sceneName___SceneBuilder().view.environment(\.colorScheme, .dark)
-            }
-            NavigationView {
-                ___VARIABLE_sceneName___SceneBuilder().view.environment(\.colorScheme, .light)
-            }
+            ___VARIABLE_sceneName___SceneBuilder().view.environment(\.colorScheme, .dark)
+            ___VARIABLE_sceneName___SceneBuilder().view.environment(\.colorScheme, .light)
         }
     }
 }
