@@ -20,7 +20,7 @@ You'll find below a full list of all the templates available with a brief descri
 
 ### Scenes Templates
 
-#### [Scene UIKit](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/Scene%20UIKit.xctemplate)
+#### [VIPER Scene UIKit](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/VIPER%20Scene%20UIKit.xctemplate)
 
 This template will generate a full VIPER scene, it will create: a `Builder`, an `UIViewController`, a `Presenter`, an `Interactor`, a `Router`, a `ViewModel`, and all the related protocols.  We won't explain what is a VIPER architecture, or how it works, but you can find more information about it [here](https://theswiftdev.com/2018/03/12/the-ultimate-viper-architecture-tutorial/).
 
@@ -28,9 +28,9 @@ This template will generate a full VIPER scene, it will create: a `Builder`, an 
 
 **Note 2:** This template is using SwiftGen, if you are not, you will have to change how to instantiate the `UIViewController`.
 
-#### [SceneTests UIKit](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/SceneTests%20UIKit.xctemplate)
+#### [VIPER SceneTests UIKit](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/VIPER%20SceneTests%20UIKit.xctemplate)
 
-This template will generate all the files necessary to cover all the tests from the `Scene UIKit` template. If you generate both of them, you'll see that it will compile without any changes, and have a 100% test coverage.
+This template will generate all the files necessary to cover all the tests from the `VIPER Scene UIKit` template. If you generate both of them, you'll see that it will compile without any changes, and have a 100% test coverage.
 
 #### [Scene SwiftUI](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/Scene%20SwiftUI.xctemplate)
 
