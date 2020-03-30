@@ -18,8 +18,10 @@ final class Mock___VARIABLE_sceneName___PresenterLogic {
     private(set) var didViewDidLoad = false
     private(set) var didFetchNewName = false
 
+    // swiftlint:disable weak_delegate
     var dataSource: ___VARIABLE_sceneName___TableViewDataSource! = ___VARIABLE_sceneName___TableViewDataSource(delegate: Mock___VARIABLE_sceneName___TableViewDataSourceDelegate())
     var tableViewDelegate: ___VARIABLE_sceneName___TableViewDelegate! = ___VARIABLE_sceneName___TableViewDelegate(delegate: Mock___VARIABLE_sceneName___TableViewDelegateLogic())
+    // swiftlint:enable weak_delegate
 
 }
 
@@ -34,6 +36,5 @@ extension Mock___VARIABLE_sceneName___PresenterLogic: ___VARIABLE_sceneName___Pr
     func fetchNewName() {
         didFetchNewName = true
     }
-
 
 }

@@ -15,6 +15,7 @@ final class Mock___VARIABLE_sceneName___TableViewDataSourceDelegate {
 
     // MARK: Properties
 
+    // swiftlint:disable:next weak_delegate
     private(set) var cellDelegate: ___VARIABLE_sceneName___TableViewCellDelegate = Mock___VARIABLE_sceneName___TableViewCellDelegate()
 
     // MARK: Life Cycle
@@ -30,7 +31,7 @@ final class Mock___VARIABLE_sceneName___TableViewDataSourceDelegate {
 extension Mock___VARIABLE_sceneName___TableViewDataSourceDelegate: ___VARIABLE_sceneName___TableViewDataSourceDelegate {
 
     var names: [String] {
-        return ["test", "test2"]
+        ["test", "test2"]
     }
 
 }

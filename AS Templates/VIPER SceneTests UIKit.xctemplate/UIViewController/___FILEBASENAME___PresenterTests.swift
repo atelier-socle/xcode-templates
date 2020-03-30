@@ -91,7 +91,7 @@ extension ___VARIABLE_sceneName___PresenterTests {
         XCTAssertFalse(presenter.viewModel.isLoading)
         XCTAssertEqual(view.namesReloaded, ["name"])
     }
-    
+
 }
 
 // MARK: - ___VARIABLE_sceneName___RouterDelegate
