@@ -29,7 +29,7 @@ final class ___VARIABLE_sceneName___TableViewDataSource: NSObject {
 extension ___VARIABLE_sceneName___TableViewDataSource: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return delegate?.names.count ?? 0
+        delegate?.names.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

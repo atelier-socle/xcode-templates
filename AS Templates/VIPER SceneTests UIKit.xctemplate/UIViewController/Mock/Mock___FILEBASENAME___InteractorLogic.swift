@@ -12,7 +12,7 @@ import Foundation
 @testable import ___VARIABLE_sceneName___
 
 final class Mock___VARIABLE_sceneName___InteractorLogic {
-    
+
     // MARK: Properties
 
     private(set) var didSubscribe = false

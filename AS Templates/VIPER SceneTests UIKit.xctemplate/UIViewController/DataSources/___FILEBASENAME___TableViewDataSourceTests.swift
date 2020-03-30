@@ -15,8 +15,10 @@ final class ___VARIABLE_sceneName___TableViewDataSourceTests: XCTestCase {
 
     // MARK: Properties
 
+    // swiftlint:disable weak_delegate
     private var dataSourceDelegate: Mock___VARIABLE_sceneName___TableViewDataSourceDelegate!
     private var dataSource: ___VARIABLE_sceneName___TableViewDataSource!
+    // swiftlint:enable weak_delegate
     private var tableView: UITableView!
 
     // MARK: Life Cycle
