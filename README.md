@@ -40,6 +40,10 @@ This template will generate a full MVVM scene, it will create: an `UIViewControl
 
 **Note 2:** This template is using SwiftGen, if you are not, you will have to change how to instantiate the `UIViewController`.
 
+#### [MVVM SceneTests UIKit](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/MVVM%20SceneTests%20UIKit.xctemplate)
+
+This template will generate all the files necessary to cover all the tests from the `MVVM Scene UIKit` template. If you generate both of them, you'll see that it will compile without any changes, and have a 100% test coverage.
+
 #### [Scene SwiftUI](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/Scene%20SwiftUI.xctemplate)
 
 SwiftUI is still young, but we tried to find what will be a clean architecture for this framework. We ended with a light VIPER architecture composed of: a `Builder`, a `View`, a `Presenter`, an `Interactor`, a `ViewModel`, but which the _who does what_ is quite different. We won't explain it here, but you are welcome to play with it and tell us what do you think about it or how to improve it.
