@@ -29,11 +29,11 @@ final class ___VARIABLE_sceneName___Interactor {
 extension ___VARIABLE_sceneName___Interactor {
 
     func subscribe() {
-        /// Subscribe to notifications, kvo, ...
+        // Subscribe to notifications, kvo, ...
     }
 
     func unsubscribe() {
-        /// Remove notifications, kvo, ...
+        // Remove notifications, kvo, ...
     }
 
 }

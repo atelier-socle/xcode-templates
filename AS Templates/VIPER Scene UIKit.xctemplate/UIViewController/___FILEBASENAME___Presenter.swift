@@ -29,11 +29,11 @@ final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presenter
          interactor: ___VARIABLE_sceneName___InteractorLogic? = nil,
          router: ___VARIABLE_sceneName___RouterLogic? = nil) {
         self.view = view
-        viewModel = SampleViewModel()
-        self.interactor = interactor ?? SampleInteractor(presenter: self)
-        self.router = router ?? SampleRouter(presenter: self)
-        dataSource = SampleTableViewDataSource(delegate: self)
-        tableViewDelegate = SampleTableViewDelegate(delegate: self)
+        viewModel = ___VARIABLE_sceneName___ViewModel()
+        self.interactor = interactor ?? ___VARIABLE_sceneName___Interactor(presenter: self)
+        self.router = router ?? ___VARIABLE_sceneName___Router(presenter: self)
+        dataSource = ___VARIABLE_sceneName___TableViewDataSource(delegate: self)
+        tableViewDelegate = ___VARIABLE_sceneName___TableViewDelegate(delegate: self)
 
         interactor?.subscribe()
     }
@@ -41,7 +41,6 @@ final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presenter
     deinit {
         interactor?.unsubscribe()
     }
-
 
 }
 
@@ -82,14 +81,14 @@ extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___InteractorD
 
 // MARK: - ___VARIABLE_sceneName___RouterDelegate
 
-extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___RouterDelegate  {
+extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___RouterDelegate {
 
 }
 
 // MARK: - ___VARIABLE_sceneName___TableViewCellDelegate
 
 extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___TableViewCellDelegate {
-    
+
     func executeButton() {
         print("button pressed")
     }

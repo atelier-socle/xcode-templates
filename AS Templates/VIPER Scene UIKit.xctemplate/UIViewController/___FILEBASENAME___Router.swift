@@ -14,7 +14,7 @@ final class ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RouterLogic 
 
     // MARK: Properties
 
-    weak var viewController: UIViewController? = nil
+    weak var viewController: UIViewController?
     private weak var presenter: ___VARIABLE_sceneName___RouterDelegate?
 
     // MARK: Life Cycle

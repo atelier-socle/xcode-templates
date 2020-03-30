@@ -15,7 +15,7 @@ final class ___VARIABLE_sceneName___TableViewDelegate: NSObject {
 
     // MARK: Properties
 
-    private weak var delegate: ___VARIABLE_sceneName___TableViewDelegateLogic!
+    private weak var delegate: ___VARIABLE_sceneName___TableViewDelegateLogic?
 
     // MARK: Life Cycle
 
@@ -31,7 +31,7 @@ extension ___VARIABLE_sceneName___TableViewDelegate: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        delegate.didSelectRow(at: indexPath)
+        delegate?.didSelectRow(at: indexPath)
     }
 
 }
