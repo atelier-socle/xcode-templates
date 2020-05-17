@@ -24,13 +24,25 @@ You'll find below a full list of all the templates available with a brief descri
 
 This template will generate a full VIPER scene, it will create: a `Builder`, an `UIViewController`, a `Presenter`, an `Interactor`, a `Router`, a `ViewModel`, and all the related protocols.  We won't explain what is a VIPER architecture, or how it works, but you can find more information about it [here](https://theswiftdev.com/2018/03/12/the-ultimate-viper-architecture-tutorial/).
 
-**Note:** This temmplates comes with a demo using an `UITableView`, from here, it's your job to remove what you won't need, and adapt the output to your need.
+**Note:** This templates comes with a demo using an `UITableView`, from here, it's your job to remove what you won't need, and adapt the output to your need.
 
 **Note 2:** This template is using SwiftGen, if you are not, you will have to change how to instantiate the `UIViewController`.
 
 #### [VIPER SceneTests UIKit](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/VIPER%20SceneTests%20UIKit.xctemplate)
 
 This template will generate all the files necessary to cover all the tests from the `VIPER Scene UIKit` template. If you generate both of them, you'll see that it will compile without any changes, and have a 100% test coverage.
+
+#### [MVVM Scene UIKit](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/MVVM%20Scene%20UIKit.xctemplate)
+
+This template will generate a full MVVM scene, it will create: an `UIViewController`, a `ViewModel`, and all the related protocols.  We won't explain what is a MVVM architecture, or how it works, but you can find a lot of articles talking about it.
+
+**Note:** This templates comes with a demo using an `UITableView`, from here, it's your job to remove what you won't need, and adapt the output to your need.
+
+**Note 2:** This template is using SwiftGen, if you are not, you will have to change how to instantiate the `UIViewController`.
+
+#### [MVVM SceneTests UIKit](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/MVVM%20SceneTests%20UIKit.xctemplate)
+
+This template will generate all the files necessary to cover all the tests from the `MVVM Scene UIKit` template. If you generate both of them, you'll see that it will compile without any changes, and have a 100% test coverage.
 
 #### [Scene SwiftUI](https://github.com/atelier-socle/xcode-templates/tree/master/AS%20Templates/Scene%20SwiftUI.xctemplate)
 
