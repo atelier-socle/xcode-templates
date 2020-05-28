@@ -18,7 +18,7 @@ final class ___VARIABLE_sceneName___TableViewDataSource: NSObject {
 
     // MARK: Life Cycle
 
-    init(delegate: ___VARIABLE_sceneName___TableViewDataSourceDelegate?) {
+    init(delegate: ___VARIABLE_sceneName___TableViewDataSourceDelegate) {
         self.delegate = delegate
     }
 
